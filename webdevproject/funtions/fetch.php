@@ -1,4 +1,4 @@
 <?php
-    $query = "SELECT * FROM tbsubject";
+    $query = "<<UPDATE SELECT QUERY>>";
     $result = $dbc->query($query);
 ?>

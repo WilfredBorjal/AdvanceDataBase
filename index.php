@@ -15,7 +15,10 @@
                 <td>ID</td>
                 <td>Subject Code</td>
                 <td>Subject Name</td>
-                <td>Action</td>   
+                <td>syllabus_id</td>
+                <td>syllabus_code</td>
+                <td>syllabus_author</td>
+                <td>Action</td>    
             </tr>
             <?php
                 while ($res = mysqli_fetch_assoc($result)) {
@@ -23,6 +26,9 @@
                     echo "<td>".$res["Subject_ID"]."</td>";
                     echo "<td>".$res["Subject_Code"]."</td>";
                     echo "<td>".$res["Subject_Name"]."</td>";
+                    echo "<td>".$res["syllabus_id"]."</td>";
+                    echo "<td>".$res["syllabus_code"]."</td>";
+                    echo "<td>".$res["syllabus_author"]."</td>";
                     echo "<td><a href=\"forms/editform.php?id.$res[Subject_ID]\">Edit</td> |
                     <a href=\"forms/editform.php?id.$res[Subject_ID]\"
                     onClick\"return confirm('Are your sure you want to delete?')\">Delete</a></td>";
